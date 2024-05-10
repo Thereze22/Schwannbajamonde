@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Animation</title>
+<style>
+    body {
+        background-color: #ffd1dc; /* Baby Pink Background */
+        margin: 0;
+        overflow: hidden;
+    }
+    #flower {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        animation: bloom 5s forwards;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    @keyframes bloom {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+</style>
+</head>
+<body>
+    <img id="flower" src="https://emojicdn.elk.sh/🌼" alt="Flower">
+</body>
+</html>
